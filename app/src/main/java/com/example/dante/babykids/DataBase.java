@@ -9,14 +9,22 @@ import java.util.ArrayList;
 
 public class DataBase extends SQLiteOpenHelper {
 
+    //Nombre Base de datos
     private final static String NOMBRE_DB="baby.db";
+    //Version del programa
     private final static int VERSION_DB=1;
+    //Creacion de la tabla nanas con sus respectivas columnas
     private final static String TABLA_BABY="CREATE TABLE nanas(id integer  primary key AUTOINCREMENT ,nombre text,edad integer,telefono text,dias text,horas text)";
+    //Creacion de la tabla usuarios con sus respectivas columnas
     private final static String TABLA_USUARIOS="CREATE TABLE usuarios(id integer  primary key AUTOINCREMENT ,usuario text,contra text)";
+
+    //Constructor
     public DataBase(Context context) {
         super(context, NOMBRE_DB, null, VERSION_DB);
     }
 
+
+    //Metodo que inserta los datos a las tablas creadas
     @Override
     public void onCreate(SQLiteDatabase db) {
 

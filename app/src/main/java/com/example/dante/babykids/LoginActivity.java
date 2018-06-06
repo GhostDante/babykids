@@ -22,6 +22,8 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etu,etp;
     private ArrayList<Ninera> nineras;
 
+
+    //Metodo que ejecuta el layout de login y obtiene la conexion a la DB
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -34,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         nineras = new ArrayList<Ninera>();
     }
 
+    //Metodo para validar usuario y contraseña en la base de datos
     public void validarUsuario(View view){
 
         Fragment fragment = null;

@@ -11,9 +11,11 @@ import android.widget.TextView;
 
 import java.util.List;
 
+//Clase adapter para la recoleccion de los datos de la ninera
 public class ListaAdapter extends RecyclerView.Adapter<ListaAdapter.AdapterViewHolder> {
     private List<Ninera> items;
 
+    //Clase con conexion al layout y los cardView
     public static class AdapterViewHolder extends RecyclerView.ViewHolder
     {
         public View v;
@@ -41,6 +43,7 @@ public class ListaAdapter extends RecyclerView.Adapter<ListaAdapter.AdapterViewH
         return items.size();
     }
 
+    //conexion al cardView
     public AdapterViewHolder onCreateViewHolder(ViewGroup vg, int i)
     {
         View v = LayoutInflater.from(vg.getContext()).inflate(R.layout.item_nana,vg,false);
@@ -48,6 +51,7 @@ public class ListaAdapter extends RecyclerView.Adapter<ListaAdapter.AdapterViewH
     }
 
 
+    //obtiene los datos del adapter y los agrega a los objetos creados en el layout y el cardView
     public void onBindViewHolder(final AdapterViewHolder vh, final int i) {
         vh.nombre.setText(items.get(i).getNombre());
         vh.edad.setText(items.get(i).getEdad());

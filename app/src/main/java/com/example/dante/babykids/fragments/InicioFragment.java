@@ -33,6 +33,7 @@ public class InicioFragment extends Fragment {
 
     //bd
     private DataBase db;
+    //conexion
     private SQLiteDatabase conexion;
 
     @Override
@@ -41,6 +42,8 @@ public class InicioFragment extends Fragment {
         super.onAttach(activity);
     }
 
+
+    //Metodo que ejecuta el layout y crea en la clase ninera el objeto con sus respectivos datos
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
