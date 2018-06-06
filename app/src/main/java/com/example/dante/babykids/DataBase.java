@@ -35,6 +35,13 @@ public class DataBase extends SQLiteOpenHelper {
         values2.put("horas","2:00PM-12:00PM");
         db.insert("nanas",null,values2);
 
+        ContentValues values3 = new ContentValues();
+        values3.put("nombre","Trace");
+        values3.put("edad","21");
+        values3.put("telefono","73456107");
+        values3.put("dias","L,M,M,S,D");
+        values3.put("horas","8:00AM-10:00PM");
+        db.insert("nanas",null,values3);
     }
 
     @Override
