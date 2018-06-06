@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+
 public class DataBase extends SQLiteOpenHelper {
 
     private final static String NOMBRE_DB="baby.db";
@@ -17,6 +19,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+
         db.execSQL(TABLA_BABY);
         db.execSQL(TABLA_USUARIOS);
         ContentValues values = new ContentValues();
