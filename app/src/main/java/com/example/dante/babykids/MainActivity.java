@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.example.dante.babykids.fragments.InicioFragment;
 
@@ -116,7 +118,22 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.acercade) {
+
+            AlertDialog.Builder uBuilder2 = new AlertDialog.Builder(MainActivity.this);
+            View aView2 = getLayoutInflater().inflate(R.layout.acercade, null);
+            uBuilder2.setView(aView2);
+            final AlertDialog dialog2 = uBuilder2.create();
+            dialog2.show();
+            Button close = (Button) aView2.findViewById(R.id.close);
+
+            close.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialog2.cancel();
+                }
+            });
+
 
         } else if (id == R.id.nav_send) {
             Intent i = new Intent(this, LoginActivity.class);
