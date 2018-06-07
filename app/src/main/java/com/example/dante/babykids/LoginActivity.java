@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                     miCursor.close();
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
-
+                    finish();
                 }else{
                     Toast.makeText(getApplicationContext(),"Contraseña incorrecta",Toast.LENGTH_SHORT).show();
                 }

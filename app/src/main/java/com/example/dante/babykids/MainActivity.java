@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.dante.babykids.fragments.InicioFragment;
@@ -31,15 +32,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -60,7 +54,7 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager=getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
 
-        setTitle("Cacied 2017");
+        setTitle("");
     }
 
     @Override
@@ -89,11 +83,27 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            finish();
         }else if(id==R.id.action_LoginOut){
             Intent i = new Intent(this, LoginActivity.class);
             startActivity(i);
+            finish();
+        }else if(id==R.id.action_acercade){
+            AlertDialog.Builder uBuilder2 = new AlertDialog.Builder(MainActivity.this);
+            View aView2 = getLayoutInflater().inflate(R.layout.acercade, null);
+            uBuilder2.setView(aView2);
+            final AlertDialog dialog2 = uBuilder2.create();
+            dialog2.show();
+            Button close = (Button) aView2.findViewById(R.id.close);
+
+            close.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialog2.cancel();
+                }
+            });
         }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -112,11 +122,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             fragmentClass = InicioFragment.class;
 
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        }  else if (id == R.id.nav_manage) {
+            finish();
 
         } else if (id == R.id.acercade) {
 
@@ -138,6 +145,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
             Intent i = new Intent(this, LoginActivity.class);
             startActivity(i);
+            finish();
         }
 
         try{
@@ -149,9 +157,8 @@ public class MainActivity extends AppCompatActivity
 
         FragmentManager fragmentManager=getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
-
         item.setChecked(true);
-        setTitle(item.getTitle());
+        //setTitle(item.getTitle());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -6,32 +6,24 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:icon="@drawable/icononinera"
+            android:title="Niñeras" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Cerrar Sesión" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
                 android:id="@+id/acercade"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Acerca de" />
+                android:icon="@drawable/ic_perm_device_information_black_24dp"
+                android:title="Acerca de..." />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Login out" />
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Salir" />
         </menu>
     </item>
 

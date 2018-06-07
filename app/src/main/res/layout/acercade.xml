@@ -63,15 +63,15 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="Ingeniero de Sistemas"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                     <TextView
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Estudiante"
-                        android:textColor="@android:color/darker_gray" />
+                        android:text="UNIVERSIDAD MARIANA"
+                        android:textColor="#000000" />
 
 
                 </LinearLayout>
@@ -122,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="Ingeniero de Sistemas"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                     <TextView
 
@@ -130,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="UNIVERSIDAD MARIANA"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
@@ -180,7 +180,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="Ingeniero de Sistemas"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                     <TextView
 
@@ -188,7 +188,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="UNIVERSIDAD MARIANA"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
@@ -228,7 +228,7 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PAOLA LOPEZ ESPAÑA"
+                        android:text="PAOLA LABRADA ESPAÑA"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="12dp"
                         android:textStyle="italic" />
@@ -239,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="Ingeniero de Sistemas"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                     <TextView
 
@@ -247,7 +247,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="UNIVERSIDAD MARIANA"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
@@ -297,7 +297,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="Ingeniero de Sistemas"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                     <TextView
 
@@ -305,7 +305,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="UNIVERSIDAD MARIANA"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
@@ -355,7 +355,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="Ingeniero de Sistemas"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                     <TextView
 
@@ -363,7 +363,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
                         android:text="UNIVERSIDAD MARIANA"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
